@@ -52,7 +52,7 @@ export default function About() {
 <section className="relative z-2">
   <div className="mt-8 flex flex-wrap justify-center gap-4">
     <a
-      href="/resume.pdf"
+      href={`${basePath}/resume.pdf`}
       target="_blank"
       rel="noopener noreferrer"
       className="bg-yellow-400 hover:bg-yellow-200 text-gray-800 font-medium py-2 px-6 rounded-full transition-colors duration-200"
