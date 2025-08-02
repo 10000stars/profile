@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 My Personal Website
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-000?logo=next.js&logoColor=white)](https://nextjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Aceternity UI](https://img.shields.io/badge/Aceternity_UI-000000?logo=vercel&logoColor=white)](https://ui.aceternity.com/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-121013?logo=github&logoColor=white)](https://pages.github.com/)
 
-First, run the development server:
+This is my portfolio site built with [Next.js](https://nextjs.org/) and deployed via **GitHub Pages**. It showcases my background, projects, and interests in geology and beyond.
+
+## 🧰 Tools Utilized
+
+- [Next.js](https://nextjs.org/) – React framework for static and dynamic web apps
+- [Tailwind CSS](https://tailwindcss.com/) – Styling framework
+- [Aceternity UI](https://ui.aceternity.com/) – Dynamic components built with Tailwind and Framer Motion
+
+
+## 🛠 Development
+
+To run locally:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To export for GitHub Pages:
+```bash
+npm run build
+npm run deploy
+`````
+Static files are exported to the out/ directory.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Deployed at:
+[here](https://10000stars.github.io/profile/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## 🐛 Bugs & Updates
 
-To learn more about Next.js, take a look at the following resources:
+If you come across any bugs, broken links, or areas I may have missed, please feel free to let me know — I'd really appreciate it!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This site will be maintained and updated over time, though updates may not always be frequent or regular. Thanks for your understanding and interest!
