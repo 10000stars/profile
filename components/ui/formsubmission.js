@@ -34,7 +34,7 @@ export default function ContactForm() {
       name="name"
       id="name"
       className="w-full rounded-md border border-gray-400 px-3 py-2 text-white bg-transparent placeholder-gray-400"
-      placeholder="Your name"
+      placeholder="Your name (optional)"
     />
   </div>
 
@@ -44,7 +44,7 @@ export default function ContactForm() {
       name="email"
       id="email"
       className="w-full rounded-md border border-gray-400 px-3 py-2 text-white bg-transparent placeholder-gray-400"
-      placeholder="Your email"
+      placeholder="Your email (optional)"
     />
   </div>
 

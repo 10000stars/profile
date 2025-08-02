@@ -4,7 +4,7 @@ import { LayoutGrid } from "./layout-grid";
 
 export function Memorabiliagrid() {
   return (
-    <div className="h-screen py-10 w-full">
+    <div className="h-screen py-10 w-full z-2">
       <LayoutGrid cards={cards} />
     </div>
   );
