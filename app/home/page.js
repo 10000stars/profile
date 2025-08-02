@@ -2,10 +2,14 @@
 
 import { Typewriter } from "@/components/ui/type";
 
+const basePath =
+  process.env.NODE_ENV === "production" ? "/profile" : "";
+
 export default function Homepage() {
   return (
     <>
-      <section className="home-section" id="home">
+      <section className="home-section" style={{
+        backgroundImage: `url('${basePath}/images/hero.jpg')`,  }} id="home">
         <div className="overlay">
           <h1>Wanxin Huang</h1>
           <div className="tagline">

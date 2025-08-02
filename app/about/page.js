@@ -2,6 +2,9 @@ import { SkillsTool } from "@/components/ui/skills";
 import { StarsBackground } from "@/components/ui/starbg";
 import { ShootingStars } from "@/components/ui/shootingstar";
 
+const basePath =
+  process.env.NODE_ENV === "production" ? "/profile" : "";
+
 export default function About() {
   return (
    <section className="about-section relative overflow-hidden text-white">
@@ -9,7 +12,7 @@ export default function About() {
      <ShootingStars className="-z-5" />
   <h1 className="about-title font-bold">About Me</h1>
   <div className="about-container">
-    <img src="/images/profile.jpg" alt="My portrait" className="about-image" />
+    <img src={`${basePath}/images/profile.jpg`} alt="My portrait" className="about-image" />
     <p className="about-text">
       I graduated with a Bachelor in Earth Sciences in the summer of 2025, specialising in Geosciences with particular 
       interests in sedimentology, geomorphology, and tectonics. Fieldwork has taken me to British Columbia, California, and 
