@@ -4,11 +4,10 @@ import { motion, AnimatePresence } from "motion/react";
 
 import { useEffect, useState } from "react";
 
-export const Animatedtemplate = ({
-  testimonials,
-  autoplay = false
-}) => {
+export const Animatedtemplate = ({ testimonials, autoplay = false }) => {
   const [active, setActive] = useState(0);
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
 
   const handleNext = () => {
     setActive((prev) => (prev + 1) % testimonials.length);
@@ -23,15 +22,14 @@ export const Animatedtemplate = ({
   };
 
   useEffect(() => {
-    if (autoplay) {
-      const interval = setInterval(handleNext, 5000);
-      return () => clearInterval(interval);
-    }
-  }, [autoplay]);
+    if (!autoplay) return;
+    const id = setInterval(() => setActive((p) => (p + 1) % testimonials.length), 5000);
+    return () => clearInterval(id);
+  }, [autoplay, testimonials.length]);
 
-  const randomRotateY = () => {
-    return Math.floor(Math.random() * 21) - 10;
-  };
+  if (!mounted) return null; // prevents SSR/CSR mismatch
+
+  const randomRotateY = () => 5;
   return (
     <div
       className=" mx-auto max-w-sm px-4 py-10 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12">
@@ -100,13 +98,13 @@ export const Animatedtemplate = ({
               duration: 0.2,
               ease: "easeInOut",
             }}>
-            <h3 className="text-2xl font-bold text-black dark:text-white">
+            <h3 className="text-xl font-bold text-white">
               {testimonials[active].name}
             </h3>
-            <p className="text-sm text-gray-500 dark:text-neutral-500">
+            <p className="text-sm text-neutral-500">
               {testimonials[active].year}
             </p>
-            <motion.p className="mt-8 text-lg text-gray-500 dark:text-neutral-300">
+            <motion.p className="mt-8 text-sm text-neutral-300">
               {testimonials[active].desc.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
@@ -149,7 +147,7 @@ export const Animatedtemplate = ({
               href={testimonials[active].link}
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-4 rounded-md bg-sky-600 px-4 py-1.5 text-sm font-medium text-black hover:bg-sky-500 transition"
+              className="ml-4 rounded-xl bg-sky-600 px-4 py-1.5 text-sm font-medium text-black hover:bg-sky-500 transition"
             >
               Read the paper
             </a>

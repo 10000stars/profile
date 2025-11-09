@@ -28,13 +28,13 @@ export default function About() {
 
   {/* Skill Tags Row */}
   <div className="flex flex-wrap justify-center gap-2 mb-3">
-  <span className="bg-emerald-300 text-sm text-gray-900 px-3 py-1.5 rounded-md border border-gray-300">
+  <span className="bg-emerald-300 text-sm text-gray-900 px-3 py-1.5 rounded-xl border border-gray-300">
     Google Earth Engine
   </span>
-  <span className="bg-emerald-300 text-sm text-gray-900 px-3 py-1.5 rounded-md border border-gray-300">
-    Geospatial Analysis
+  <span className="bg-emerald-300 text-sm text-gray-900 px-3 py-1.5 rounded-xl border border-gray-300">
+    GNSS Tectonics
   </span>
-  <span className="bg-emerald-300 text-sm text-gray-900 px-3 py-1.5 rounded-md border border-gray-300">
+  <span className="bg-emerald-300 text-sm text-gray-900 px-3 py-1.5 rounded-xl border border-gray-300">
     Ground Penetrating Radar
   </span>
 </div>  

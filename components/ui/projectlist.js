@@ -1,5 +1,6 @@
 import { Animatedtemplate } from "./project-template";
 
+
 export function Animatedprojects() {
   const projects = [
     {
@@ -29,7 +30,7 @@ export function Animatedprojects() {
       desc:
         "Exploring the presence of active faulting beneath downtown Singapore",
       name: "Neotectonics in the Kallang Basin",
-      year: "2023-present",
+      year: "2023-2025",
       src: "projects/Kallang.png",
     },
   ];
