@@ -131,7 +131,53 @@ const SAMPLE_LOCATIONS = [
       { url: "images/padangbai.jpg", caption: "Padang Bai" },
       { url: "images/rice.jpg", caption: "Rice fields" },
     ]
-  }
+  },
+    {
+    id: 10,
+    name: "Guangdong, China",
+    lat: 23.0666,
+    lng:  112.7777,
+    images: [
+      { url: "images/karst_lake.jpg", caption: "A steep, tower-like limestone hill" },
+      { url: "images/karst_insc.jpg", caption: "Inscriptions on the walls of a karstic cave" },
+    ],
+  },
+    {
+    id: 11,
+    name: "Chongqing, China",
+    lat: 29.5657,
+    lng:  106.5512,
+    images: [
+      { url: "images/chongqing_night.jpg", caption: "The night city" },
+      { url: "images/chongqing1.jpg", caption: "Dipping limestone layers" },
+      { url: "images/chongqing2.jpg", caption: "One of the Wulong Karst bridges" }
+      
+    ],
+  },
+    {
+    id: 12,
+    name: "Ko Phra Thong, Thailand",
+    lat: 9.1108,
+    lng:  98.2779,
+    images: [
+      { url: "images/PT_beach.jpg", caption: "Sunny afternoon" },
+      { url: "images/PT_field.jpg", caption: "A day in the field" },
+      { url: "images/PT_sunset.jpg", caption: "Through the clouds" },
+      { url: "images/PT_chickens.jpg", caption: "Cloths and Chickens" },
+    ],
+  },
+    {
+    id: 13,
+    name: "Gamay, Philippines",
+    lat: 12.3729,
+    lng:  125.2956,
+    images: [
+      { url: "images/gamay_swale.jpg", caption: "Ridge and Swale" },
+      { url: "images/gamay_field.jpg", caption: "Good field day" },
+      { url: "images/gamay_stars.jpg", caption: "A starry night" },
+      { url: "images/gamay_landslide.jpg", caption: "Landslide" },
+    ],
+  },
 ];
 
 // Smaller pin icon

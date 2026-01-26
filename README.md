@@ -1,4 +1,4 @@
-# 🌐 My Personal Website
+# My Personal Website
 
 [![Next.js](https://img.shields.io/badge/Next.js-000?logo=next.js&logoColor=white)](https://nextjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
@@ -7,14 +7,16 @@
 
 This is my portfolio site built with [Next.js](https://nextjs.org/) and deployed via **GitHub Pages**. It showcases my background, projects, and interests in geology and beyond.
 
-## 🧰 Tools Utilized
+[Latest changes↗](CHANGELOG.md#2026-01-03)
+
+## Tools Utilized
 
 - [Next.js](https://nextjs.org/) – React framework for static and dynamic web apps
 - [Tailwind CSS](https://tailwindcss.com/) – Styling framework
 - [Aceternity UI](https://ui.aceternity.com/) – Dynamic components built with Tailwind and Framer Motion
 
 
-## 🛠 Development
+## Development
 
 To run locally:
 
@@ -34,10 +36,14 @@ Deployed at:
 [here](https://10000stars.github.io/profile/)
 
 
-## 🐛 Bugs & Updates
+## Bugs & Updates
 
 If you come across any bugs, broken links, or areas I may have missed, please feel free to let me know — I'd really appreciate it!
 
 This site will be maintained and updated over time, though updates may not always be frequent or regular. Thanks for your understanding and interest!
 
-Last updated: 9th Nov 2025
+See [Changelog](CHANGELOG.md) for all updates and changes.
+
+Last updated: 26 Jan 2026
+
+
