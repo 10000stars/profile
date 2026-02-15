@@ -1,6 +1,7 @@
 "use client";
 
 import { Typewriter } from "@/components/ui/type";
+import { Mail } from "lucide-react";
 
 const basePath =
   process.env.NODE_ENV === "production" ? "/profile" : "";
@@ -22,7 +23,7 @@ export default function Homepage() {
             <img src="https://www.svgrepo.com/show/448234/linkedin.svg" alt="LinkedIn" />
         </a>
         <a href="mailto:hwanxin20@gmail.com">
-            <img src="https://www.svgrepo.com/show/303161/gmail-icon-logo.svg" alt="Email" />
+            <Mail className="h-7 w-7" />
         </a>   
         </div>
         </div>

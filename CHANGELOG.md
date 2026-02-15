@@ -2,9 +2,24 @@
 
 All notable changes to this portfolio site will be documented here.
 
+## 2026-02-15
+### Patched
+- Icons 
+- Image sizes
+
+### Added
+- More project details  
+
+### Changed
+- Wordings for About Me
+- Skillset layout
+- Projects frame size and configuration
+
+
 ## 2026-01-26
 ### Added
 - Updated Memorabilia with pictures from 2 recent fieldworks: Phra Thong and Gamay 
+
 
 ## 2026-01-03
 ### Patched

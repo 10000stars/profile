@@ -34,9 +34,9 @@ const people = [
   },
   {
     id: 6,
-    name: "Google Earth",
+    name: "Google Earth Engine",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Google_Earth_icon.svg/512px-Google_Earth_icon.svg.png?20210607063331",
+      "images/googleearth-engine.png",
   },
 ];
 

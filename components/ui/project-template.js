@@ -32,8 +32,8 @@ export const Animatedtemplate = ({ testimonials, autoplay = false }) => {
   const randomRotateY = () => 5;
   return (
     <div
-      className=" mx-auto max-w-sm px-4 py-10 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12">
-      <div className="relative grid grid-cols-1 gap-20 md:grid-cols-2">
+      className=" mx-auto lg:max-w-5xl px-4 py-10 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12">
+      <div className="relative grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-20">
         <div>
           <div className=" z-0 relative w-full aspect-square">
             <AnimatePresence>
@@ -79,7 +79,7 @@ export const Animatedtemplate = ({ testimonials, autoplay = false }) => {
             </AnimatePresence>
           </div>
         </div>
-        <div className="flex flex-col justify-between ">
+        <div className="flex flex-col justify-between">
           <motion.div
             key={active}
             initial={{
@@ -101,55 +101,61 @@ export const Animatedtemplate = ({ testimonials, autoplay = false }) => {
             <h3 className="text-xl font-bold text-white">
               {testimonials[active].name}
             </h3>
-            <p className="text-sm text-neutral-500">
+            <p className="text-sm text-neutral-400">
               {testimonials[active].year}
             </p>
-            <motion.p className="mt-8 text-sm text-neutral-300">
-              {testimonials[active].desc.split(" ").map((word, index) => (
-                <motion.span
-                  key={index}
-                  initial={{
-                    filter: "blur(10px)",
-                    opacity: 0,
-                    y: 5,
-                  }}
-                  animate={{
-                    filter: "blur(0px)",
-                    opacity: 1,
-                    y: 0,
-                  }}
-                  transition={{
-                    duration: 0.2,
-                    ease: "easeInOut",
-                    delay: 0.02 * index,
-                  }}
-                  className="inline-block">
-                  {word}&nbsp;
-                </motion.span>
-              ))}
-            </motion.p>
+            <div className="mt-8 space-y-4">
+      {testimonials[active].desc.map((paragraph, paraIndex) => (
+        <motion.p key={paraIndex} className="text-sm text-white">
+          {paragraph.split(" ").map((word, index) => (
+            <motion.span
+              key={index}
+              initial={{
+                filter: "blur(10px)",
+                opacity: 0,
+                y: 5,
+              }}
+              animate={{
+                filter: "blur(0px)",
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                duration: 0.2,
+                ease: "easeInOut",
+                delay: 0.02 * index,
+              }}
+              className="inline-block">
+              {word}&nbsp;
+            </motion.span>
+          ))}
+        </motion.p>
+      ))}
+    </div>
           </motion.div>
-          <div className="flex gap-4 pt-12 md:pt-0">
+          <div className="flex gap-4 pt-12 md:pt-0 justify-between">
+            <div className="flex gap-4">
             <button
               onClick={handlePrev}
-              className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800">
+              className="group/button flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800">
               <IconArrowLeft
-                className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:rotate-12 dark:text-neutral-400" />
+                className="h-7 w-7 text-black transition-transform duration-300 group-hover/button:rotate-12 dark:text-neutral-400" />
             </button>
             <button
               onClick={handleNext}
-              className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800">
+              className="group/button flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800">
               <IconArrowRight
-                className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:-rotate-12 dark:text-neutral-400" />
+                className="h-7 w-7 text-black transition-transform duration-300 group-hover/button:-rotate-12 dark:text-neutral-400" />
             </button>
+            </div>
                     {testimonials[active].link && (
             <a
               href={testimonials[active].link}
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-4 rounded-xl bg-sky-600 px-4 py-1.5 text-sm font-medium text-black hover:bg-sky-500 transition"
+              className="ml-4 border-black rounded-xl bg-white px-4 py-1.5 text-sm font-medium text-black hover:scale-105 transition"
             >
-              Read the paper
+              Read more
             </a>
           )}
           </div>

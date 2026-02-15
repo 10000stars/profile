@@ -1,7 +1,6 @@
 "use client";
 import { StarsBackground } from "@/components/ui/starbg";
 import { Animatedprojects } from "@/components/ui/projectlist";
-import { Memorabiliagrid }  from "@/components/ui/memorabiliagrid";
 import dynamic from 'next/dynamic';
 
 // Dynamic import with no SSR
