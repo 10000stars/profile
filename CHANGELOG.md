@@ -2,6 +2,19 @@
 
 All notable changes to this portfolio site will be documented here.
 
+## 2026-06-06
+### Patched
+- Icons
+
+### Added
+- Pop up & pictures for Beach Ridge project
+- Updated Memorabilia 
+
+### Changed
+- Wordings for About Me
+- Skillset layout
+
+
 ## 2026-02-15
 ### Patched
 - Icons 
@@ -17,16 +30,11 @@ All notable changes to this portfolio site will be documented here.
 
 
 ## 2026-01-26
-### Added
-- Updated Memorabilia with pictures from 2 recent fieldworks: Phra Thong and Gamay 
-
-
-## 2026-01-03
 ### Patched
 - Next.js security vulnerabilities (Dec 2025)
 
 ### Added
-- 2 images for Memorabilia
+- Updated Memorabilia 
 
 
 ## 2025-11-09
@@ -35,7 +43,7 @@ All notable changes to this portfolio site will be documented here.
 - Ending 'Thank You...' text
 
 ### Added
-- Map and images for Memorabilia
+- Images for Memorabilia
 
 ### Changed
 - Wordings for About Me

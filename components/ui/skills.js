@@ -24,7 +24,7 @@ const people = [
     id: 4,
     name: "R",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png?20240131042527",
+      "https://www.r-project.org/logo/Rlogo.png",
   },
   {
     id: 5,
@@ -42,8 +42,13 @@ const people = [
 
 export function SkillsTool() {
   return (
-    <div className="flex flex-row items-center justify-center mt-3 mb-5 w-full">
-      <AnimatedTooltip items={people} />
+    <div className="flex flex-col items-center mt-3 mb-5 w-full">
+      <p className="text-xs text-white font-light mb-3 tracking-widest uppercase">
+      Some tools I work with
+      </p>
+      <div className="flex flex-row items-center justify-center w-full">
+        <AnimatedTooltip items={people} />
+      </div>
     </div>
   );
 }

@@ -1,13 +1,10 @@
 "use client";
 import { StarsBackground } from "@/components/ui/starbg";
 import { Animatedprojects } from "@/components/ui/projectlist";
+import MemorabiliaGallery from "@/components/ui/memorabilia-gallery"
 import dynamic from 'next/dynamic';
 
-// Dynamic import with no SSR
-const WorldMap = dynamic(() => import('@/components/ui/worldmap'), { 
-  ssr: false,
-  loading: () => <div className="h-[80vh] bg-slate-900 flex items-center justify-center text-white">Loading map...</div>
-});
+
 
 export default function Projects() {
   return (
@@ -17,7 +14,7 @@ export default function Projects() {
       <Animatedprojects />
       <h2 className="text-2xl mt-5 font-semibold z-2">Memorabilia</h2>
       
-      <WorldMap /> 
+     <MemorabiliaGallery />
      </section>
   );
 }

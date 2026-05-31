@@ -11,7 +11,26 @@ export function Animatedprojects() {
       name: "Holocene Beach Ridges in Southeast Asia",
       year: "2024 - present",
       src: "projects/BR.png",
-      link: "https://dr.ntu.edu.sg/entities/publication/4327f23e-85c3-4218-b45c-efe11b30a17b"
+      links: [
+        null,   
+        null,                        
+        null 
+      ],
+      images: [
+        "projects/gpr_transect.png",
+        "projects/gpr_survey.png",
+        "projects/gpr_core.png",
+      ],
+      captions: [
+        ["Setting up a GPR transect along a dirt bike track on a remote island in southern Thailand. On an island this overgrown, existing dirt bike trails are often the only way to get a good survey line.", "The island has one of the most extensive and well-preserved beach ridge systems in the region (see the cover image for this project), but getting here requires a 40-minute boat ride from the mainland. Worth it, though."],
+        ["Running a 100 MHz GPR survey along the side of a paved road cutting through a resort property. The paved road made for a perfect survey corridor, flat and consistent. I handled the transmitter and receiver, moving them at regular intervals while a colleague managed the data logger.", "Getting here took a bit of groundwork too. The resort is privately owned, so access had to be arranged ahead of time through the local mayor and resort management before we could set foot on the property."],
+        ["Ground-truthing is an essential part of any geophysical survey. Alongside the GPR, we routinely hand auger to ground-truth what the radar is picking up, and to collect samples for dating through radiocarbon and OSL analyses. Sometimes we pull full sediment cores too, for more detailed lab work back home.","Here, a distinct non-linear contact in the auger suggests something exciting right beneath our feet!"]
+      ],
+      locations: [
+        "Ko Phra Thong, Thailand",
+        "Gamay, Philippines",
+        "Natuna, Indonesia",
+      ],
     },
     {
       desc:

@@ -14,16 +14,13 @@ export default function About() {
   <div className="about-container">
     <img src={`${basePath}/images/profile.jpg`} alt="My portrait" className="about-image" />
     <p className="about-text">
-      I graduated with a Bachelor in Earth Sciences in the summer of 2025, specialising in Geosciences with particular 
-      interests in sedimentology, geomorphology, and tectonics. Fieldwork has taken me to diverse and inspiring landscapes 
-      around the world, and I am eager to discover where the next trail leads.
+      I graduated with a Bachelor in Earth Sciences in the summer of 2025, with interests in sedimentology, geomorphology, and tectonics. Fieldwork has taken me to diverse and inspiring landscapes around the world, and I firmly believe that the best way to understand our Earth is to actually stand on it.
       <br /><br />
-      When I'm not staring at rocks, I'm probably exploring the outdoors, disovering hidden corners of a city, 
-      wandering through museums, disappearing into a good book, or just lazing around on a cozy afternoon.
+      When I'm not staring at rocks, I'm probably out exploring, wandering through museums, disappearing into a good book, or just lazing around on a cozy afternoon.
     </p>
   </div>
 
-  <div className="mt-10 text-center space-y-4">
+  <div className="mt-6 text-center space-y-4">
 
 {/* Icons Row*/}
   <div className="flex flex-wrap justify-center gap-6">

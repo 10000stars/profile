@@ -7,7 +7,7 @@
 
 This is my portfolio site built with [Next.js](https://nextjs.org/) and deployed via **GitHub Pages**. It showcases my background, projects, and interests in geology and beyond.
 
-[Latest changes↗](CHANGELOG.md#2026-02-15)
+[Latest changes↗](CHANGELOG.md#2026-06-06)
 
 ## Tools Utilized
 
@@ -38,12 +38,12 @@ Deployed at:
 
 ## Bugs & Updates
 
-If you come across any bugs, broken links, or areas I may have missed, please feel free to let me know — I'd really appreciate it!
+If you come across any bugs, broken links, or areas I may have missed, please feel free to let me know. I really appreciate it!
 
 This site will be maintained and updated over time, though updates may not always be frequent or regular. Thanks for your understanding and interest!
 
 See [Changelog](CHANGELOG.md) for all updates and changes.
 
-Last updated: 15 Feb 2026
+Last updated: 6 Jun 2026
 
 
